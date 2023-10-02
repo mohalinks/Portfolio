@@ -1,7 +1,14 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
@@ -11,19 +18,29 @@ header {
     padding: 20px;
 }
 
-h1 {
-    margin: 0;
+header h1 {
+    font-size: 36px;
 }
 
 section {
-    padding: 20px;
+    background-color: #fff;
     margin: 20px;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 ul {
@@ -38,3 +55,31 @@ li {
 .project {
     margin-bottom: 20px;
 }
+
+/* Style links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Add a button style */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
